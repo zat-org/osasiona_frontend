@@ -8,8 +8,9 @@
                 <ul class="navbar-nav flex-row justify-content-evenly align-items-center" dir="rtl">
                     <template v-for="link, index in links" :key="link.href">
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" :class="$route.path.includes(link.href) ? 'active' : ''"
-                                aria-current="page" :to="{ name: link.href }">{{ link.name }}
+                            <NuxtLink class="nav-link" :class="($route.path.includes(link.href)) || ($route.path === '/' &&
+                                    link.href === 'story') ? 'active' : ''" aria-current=" page" :to="{ name: link.href }">
+                                {{ link.name }}
                             </NuxtLink>
                         </li>
                     </template>

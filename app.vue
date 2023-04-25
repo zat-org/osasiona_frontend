@@ -24,14 +24,14 @@ const links = [
     name: "عملائنا",
     href: "clients"
   },
-  {
-    name: "انضم لنا",
-    href: "join_us"
-  },
   // {
-  //   name: "اتصل بنا",
-  //   href: "contact_us"
-  // }
+  //   name: "انضم لنا",
+  //   href: "join_us"
+  // },
+  {
+    name: "اتصل بنا",
+    href: "contact_us"
+  }
 ]
 </script>
 
