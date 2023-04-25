@@ -3,7 +3,7 @@
         <div class="container-fluid d-none d-md-block ">
             <div class="row flex-column justify-content-center align-items-center">
                 <a class="navbar-brand " href="#">
-                    <img src="osasiona.png" class="nav-logo" alt="osasiona logo">
+                    <img src="@/assets/images/osasiona.png" class="nav-logo" alt="osasiona logo">
                 </a>
                 <ul class="navbar-nav flex-row justify-content-evenly align-items-center" dir="rtl">
                     <template v-for="link, index in links" :key="link.href">
@@ -18,7 +18,7 @@
         </div>
         <div class="container-fluid d-md-none ">
             <a class="navbar-brand d-block" href="#">
-                <img src="osasiona.png" class="nav-logo" alt="osasiona logo">
+                <img src="@/assets/images/osasiona.png" class="nav-logo" alt="osasiona logo">
             </a>
             <button class="navbar-toggler d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarElm">
                 <i class="fas fa-bars"></i>
