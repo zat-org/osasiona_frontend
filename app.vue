@@ -39,7 +39,7 @@ const links = [
 :root {
   --palette-primary: #30475E;
   --palette-primary-light: #4b7eb1;
-  --palette-secondary: #F05454;
+  --palette-secondary: #f68632;
   --palette-orange: #f68632;
   --palette-light: #F5F5F5;
   --palette-dark: #121212;
