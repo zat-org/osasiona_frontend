@@ -1,52 +1,67 @@
 <template>
-    <div class="container mt-5 mb-5 hero">
+    <div class="container  hero">
         <h2>ابقى على تواصل معنا.</h2>
     </div>
 
-    <div class="container data mt-3">
+    <div class="container my-3">
         <div class="row">
-            <div class="col-12 col-sm-3">
-                <p class="d-flex  align-items-center justify-content-center">
-                    <i class="fas fa-phone-square icon"></i>
-                    رقم الهاتف
-                </p>
+            <div class="col-12 col-md-6">
+                <div class="row mb-2">
+                    <div class="col-3 col-md-2  d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-phone icon fa-2x"></i>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <span class="d-inline-block p-0 m-0 fw-semibold contact_header">
+                                رقم الهاتف
+                            </span>
+                            <span class="d-inline-block p-0 m-0">
+                                <a href="tel:0545970009">0545970009</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class=" col-12 col-sm-9">
-                <p class="text-center">
-                    <a href="tel:0545970009" class="text-none">0545970009</a>
-                </p>
+            <div class="col-12 col-md-6">
+                <div class="row mb-2">
+                    <div class="col-3 col-md-2  d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-at icon fa-2x"></i>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <span class="d-inline-block p-0 m-0 fw-semibold contact_header">
+                                عنوان البريد الالكتروني
+                            </span>
+                            <span class="d-inline-block p-0 m-0">
+                                <a href="mailto:hr@osasyona.com">hr@osasyona.com</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <hr class="m-0 p-0 mb-3">
-        <div class="row">
-            <div class=" col-12 col-sm-3 d-flex justify-content-center align-items-center">
-                <p class="d-flex justify-content-start align-items-center">
-                    <i class="fas fa-envelope icon"></i>
-                    عنوان البريد الالكتروني
-                </p>
+
+        <div class="row mb-2">
+            <div class="col-3 col-md-1 d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-location-dot icon fa-2x"></i>
             </div>
-            <div class=" col-12 col-sm-9">
-                <p class="text-center">
-                    <a href="mailto:hr@osasyona.com">hr@osasyona.com</a>
-                </p>
-            </div>
-        </div>
-        <hr class="m-0 p-0 mb-3">
-        <div class="row">
-            <div class=" col-12 col-sm-3 d-flex justify-content-center align-items-center">
-                <p class="d-flex justify-content-start align-items-center">
-                    <i class="fas fa-location icon"></i>
-                    العنوان
-                </p>
-            </div>
-            <div class=" col-12 col-sm-9">
-                <p class="text-center">3587 شارع رقم 298 - حي الياسمين ,الرياض <br> , المملكة العربية السعودية</p>
+            <div class="col-9">
+                <div class="row">
+                    <span class="d-inline-block p-0 m-0 fw-semibold contact_header">
+                        العنوان
+                    </span>
+                    <span class="d-inline-block p-0 m-0">
+                        3587 شارع رقم 298 - حي الياسمين ,الرياض , المملكة العربية
+                        السعودية
+                    </span>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="container email-form">
-
+    <div class="container-fluid email-form">
+        <h3 class="contact_header">دون رسالتك هنا</h3>
+        <ContactMessage />
     </div>
 
     <section class="container-fluid location mt-3" data-wow-duration="600ms" id="contact-us"
@@ -81,20 +96,35 @@ definePageMeta({
 </script>
 
 <style scoped>
+.email-form {
+    background-color: #fff;
+    padding: 1rem 1rem;
+}
+
 .address {
     background-color: #fff;
     padding: 1rem;
     border-radius: 1rem;
 }
 
+.contact_header {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--palette-orange);
+}
+
 .icon {
-    font-size: 1.5rem;
-    color: var(--palette-secondary);
+    color: var(--palette-orange);
     margin-left: 0.5rem;
 }
 
 .location {
     position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .contact-info {

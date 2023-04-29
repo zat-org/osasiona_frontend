@@ -5,7 +5,7 @@
         <div class="clients-container mt-3">
             <div v-for="client in CLIENTS" :key="client.image" class=" image-container"
                 :style="`background-color:${client.color}`">
-                <img :src="client.image" class="image" :alt="client.name">
+                <img :src="client.image" class="image" :alt="client.name" draggable="false">
             </div>
         </div>
     </div>
@@ -74,7 +74,7 @@ const CLIENTS = [
     gap: 1rem;
     justify-content: space-evenly;
     grid-template-columns: repeat(auto-fill, 10rem);
-
+    align-items: center;
 }
 
 .image-container {

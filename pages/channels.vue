@@ -35,6 +35,13 @@
                 <p class="text-center">{{ channel.description }}</p>
             </div>
         </div>
+
+        <div class="row justify-content-center mt-3">
+            <NuxtLink :to="{ name: 'join_us' }" class="col-8 btn btn-dark">
+                انضم لنا
+            </NuxtLink>
+        </div>
+
     </div>
 </template>
 
@@ -91,6 +98,10 @@ const Channels = [
 </script>
 
 <style scoped>
+.btn {
+    border-radius: 0px;
+}
+
 .image-container {
     display: flex;
     justify-content: center;

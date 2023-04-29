@@ -6,6 +6,6 @@ export default defineNuxtConfig({
             noscript: [{ children: 'JavaScript is required' }],
         }
     },
-    css: ["@/node_modules/@fortawesome/fontawesome-free/css/all.min.css", "@/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css", "@/assets/css/main.css"]
-
+    css: ["@/node_modules/@fortawesome/fontawesome-free/css/all.min.css", "@/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css", "@/assets/css/main.css"],
+    modules: ['@nuxtjs/strapi'],
 })
