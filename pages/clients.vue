@@ -81,7 +81,7 @@ const CLIENTS = [
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #F05454;
+    border: 2px solid var(--palette-orange);
 
     width: 10rem;
     height: 10rem;
