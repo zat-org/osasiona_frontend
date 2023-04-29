@@ -2,8 +2,8 @@
     <div class="container text-center my-5">
         <h1>عملائنا</h1>
 
-        <div class="row justify-content-evenly align-items-center g-3 mt-3">
-            <div v-for="client in CLIENTS" :key="client.image" class="col-auto image-container"
+        <div class="clients-container mt-3">
+            <div v-for="client in CLIENTS" :key="client.image" class=" image-container"
                 :style="`background-color:${client.color}`">
                 <img :src="client.image" class="image" :alt="client.name">
             </div>
@@ -29,41 +29,54 @@ const CLIENTS = [
     },
 
     {
-        image: "gan.jpeg",
+        image: "ska.jpeg",
         color: "#fff",
-        name: "جان"
+        name: "صكة"
     },
     {
-        image: "kam_logo.png",
+        image: "khder.jpeg",
         color: "#fff",
-        name: "كملنا"
+        name: "خدير"
     },
 
     {
-        image: "gan.jpeg",
+        image: "javaTime.jpg",
         color: "#fff",
-        name: "جان"
+        name: "جافا تايم"
     },
     {
-        image: "kam_logo.png",
+        image: "tarbe3a.png",
         color: "#fff",
-        name: "كملنا"
+        name: "تربيعة"
     },
     {
-        image: "gan.jpeg",
+        image: "romansya.jpg",
         color: "#fff",
-        name: "جان"
+        name: "رومانسية"
     },
     {
-        image: "kam_logo.png",
+        image: "stc.jpg",
         color: "#fff",
-        name: "كملنا"
+        name: "stc play"
     },
+    {
+        image: "creativeOfHope.jpg",
+        color: "#fff",
+        name: "ابداع الامل"
+    }
 
 ]
 </script>
 
 <style scoped>
+.clients-container {
+    display: grid;
+    gap: 1rem;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fill, 10rem);
+
+}
+
 .image-container {
     display: flex;
     justify-content: center;

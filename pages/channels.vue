@@ -1,7 +1,7 @@
 <template>
     <div class="container mb-5">
         <section class=" text-center">
-            <h3 class="my-5">عدد مشتركي القنوات التابعه لأوساسيونا</h3>
+            <h3 class="my-5">عدد مشتركى القنوات التابعه لأوساسيونا</h3>
             <div class="row ">
                 <div class="col-6 ">
                     <i class="fa-brands fa-youtube fa-7x text-danger"></i>

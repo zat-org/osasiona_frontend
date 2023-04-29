@@ -1,6 +1,6 @@
 <template>
     <div class="container mt-5 mb-5 hero">
-        <h2>ابقي علي تواصل معنا.</h2>
+        <h2>ابقى على تواصل معنا.</h2>
     </div>
 
     <div class="container data mt-3">
