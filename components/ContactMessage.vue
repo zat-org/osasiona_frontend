@@ -1,5 +1,9 @@
 <template>
     <div class="card my-3 ">
+        <div v-if="msg_success" class="alert alert-success alert-dismissible px-3" role="alert">
+            <div>مرحبا بك فى اى وقت </div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         <form @submit.prevent="handleSubmit" class="container px-4 mt-3 mb-3">
             <div class=" mb-3">
                 <label for="name" class="form-label">
@@ -35,10 +39,7 @@
                 </button>
             </div>
         </form>
-        <div v-if="msg_success" class="alert alert-success alert-dismissible" role="alert">
-            <div>مرحبا بك فى اى وقت </div>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+
     </div>
 </template>
 
