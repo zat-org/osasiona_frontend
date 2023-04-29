@@ -1,16 +1,16 @@
 <template>
     <div class="card my-3 ">
-        <div v-if="msg_success" class="alert alert-success alert-dismissible px-3" role="alert">
+        <div v-if="msg_success" class="alert alert-success alert-dismissible mx-3 mt-2" role="alert">
             <div>مرحبا بك فى اى وقت </div>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <form @submit.prevent="handleSubmit" class="container px-4 mt-3 mb-3">
+        <form @submit.prevent="handleSubmit" class="container px-4 mt-3 mb-3" novalidate>
             <div class=" mb-3">
                 <label for="name" class="form-label">
                     <i class="fas fa-signature"></i>
                     الاسم</label>
-                <input dir="rtl" type="text" v-model="state.name" class="form-control" @keypress="validateInput" id="name"
-                    name="name" placeholder=" " minlength="4" required>
+                <input dir="rtl" type="text" v-model="state.name" class="form-control" @keypress="validateInput"
+                    @blur="validateInput" id="name" name="name" placeholder=" " minlength="4" required>
                 <div class="invalid-feedback"> برجاء ادراج اسم صحيح</div>
 
             </div>
@@ -19,7 +19,7 @@
                     <i class="fa-solid fa-at"></i>
                     البريد الالكتروني</label>
                 <input type="email" lang="en" class="form-control" v-model="state.email" id="email"
-                    @keypress="validateInput" name="email" placeholder=" " required>
+                    @keypress="validateInput" @blur="validateInput" name="email" placeholder=" " required>
                 <div class="invalid-feedback">برجاء ادراج بريد الكتروني صحيح</div>
 
             </div>
@@ -28,7 +28,7 @@
                     <i class="fas fa-message"></i>
                     الرسالة</label>
                 <textarea class="form-control" id="message" v-model="state.message" rows="5" @keypress="validateInput"
-                    name="message" required placeholder="" minlength="10"></textarea>
+                    @blur="validateInput" name="message" required placeholder="" minlength="10"></textarea>
 
                 <div class="invalid-feedback">برجاء ادراج محتوي بالرسالة</div>
             </div>
@@ -52,7 +52,17 @@ const state = ref({
 })
 
 const validateInput = (e) => {
+    e.target.setCustomValidity("")
     if (e.target.checkValidity()) {
+        if (e.target.name === "email") {
+            let emailRgx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+            if (!emailRgx.test(e.target.value)) {
+                e.target.classList.add("is-invalid")
+                e.target.classList.remove("is-valid")
+                e.target.setCustomValidity("not valid Email")
+                return;
+            }
+        }
         e.target.classList.add("is-valid")
         e.target.classList.remove("is-invalid")
     } else {
@@ -65,6 +75,7 @@ const client = useStrapiClient()
 
 const handleSubmit = async (e) => {
     if (!e.target.checkValidity()) return;
+    e.target.classList.add("was-validated")
     let now = new Date()
     try {
         const message = await client('/messages', { method: 'POST', body: { data: { ...state.value, sentAt: now.toISOString() } } })
@@ -75,6 +86,7 @@ const handleSubmit = async (e) => {
             name: "",
             email: ""
         }
+        e.target.classList.remove("was-validated")
     } catch (err) {
         console.error(err);
     }
