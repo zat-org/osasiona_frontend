@@ -61,7 +61,7 @@
 
     <div class="container-fluid email-form">
         <h3 class="contact_header">دون رسالتك هنا</h3>
-        <ContactMessage />
+        <ContactMessage type="contact_us" />
     </div>
 
     <section class="container-fluid location mt-3" data-wow-duration="600ms" id="contact-us"

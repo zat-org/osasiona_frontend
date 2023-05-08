@@ -44,6 +44,7 @@
 </template>
 
 <script setup>
+const props = defineProps(['type'])
 const msg_success = ref(false)
 const state = ref({
     message: "",
@@ -78,7 +79,9 @@ const handleSubmit = async (e) => {
     e.target.classList.add("was-validated")
     let now = new Date()
     try {
-        const message = await client('/messages', { method: 'POST', body: { data: { ...state.value, sentAt: now.toISOString() } } })
+
+        const message = await client(`/${props.type === 'join_us' ? 'join-us-message' : 'contact-us-message'}`,
+            { method: 'POST', body: { data: { ...state.value, sentAt: now.toISOString() } } })
         console.log(message);
         msg_success.value = true;
         state.value = {

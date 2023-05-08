@@ -3,7 +3,7 @@
         <h2 class="section-header">تبغى تنضم معنا..؟</h2>
         <h4 class=" section-header mt-2"> ارسل لنا و نضبطك</h4>
 
-        <ContactMessage />
+        <ContactMessage type="join_us" />
 
     </div>
 </template>
