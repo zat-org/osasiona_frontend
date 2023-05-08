@@ -80,8 +80,8 @@ const handleSubmit = async (e) => {
     let now = new Date()
     try {
 
-        const message = await client(`/${props.type === 'join_us' ? 'join-us-message' : 'contact-us-message'}`,
-            { method: 'POST', body: { data: { ...state.value, sentAt: now.toISOString() } } })
+        const message = await client(`/${props.type === 'join_us' ? 'join-us-messages' : 'contact-us-messages'}`,
+            { method: 'POST', body: { data: { ...state.value, date: now.toISOString() } } })
         console.log(message);
         msg_success.value = true;
         state.value = {
