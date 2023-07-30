@@ -1,7 +1,7 @@
 <template>
-    <section dir="rtl" id="contact-from" class="bg-white ">
-        <div class="grid  grid-cols-1 md:grid-cols-2 py-10 px-5 items-center">
-            <div class="container mx-auto flex flex-col items-center ">
+    <section dir="rtl" id="contact-from" class="bg-white pt-10">
+        <div class="grid  grid-cols-1 md:grid-cols-2 my-10 md:px-5 items-center ">
+            <div class="container mx-auto flex flex-col items-center justify-center ">
                 <div id="from-header" class="text-black">
                     <h2 class="text-4xl">
                         تواصل معنا لنعمل سويا<span class="text-brightRed">.</span>
@@ -10,9 +10,9 @@
                             href="mailto:hr@osasyona.com">
                             hr@osasyona.com</a></p>
                 </div>
-                <form class="pt-5" @submit.prevent="handleSubmit" novalidate>
+                <form class="pt-5 rtl:pr-5 ltr:pl-5" @submit.prevent="handleSubmit" novalidate>
                     <template v-for="elm in FormElements" :key="elm.name">
-                        <div class="input-Element relative mb-1.5">
+                        <div class="input-Element relative mb-1.5 ">
                             <template v-if="elm.type === 'textarea'">
                                 <textarea
                                     class="not-Resize transition-all w-full  h-52

@@ -9,9 +9,8 @@
                     adipisicing
                     elit. Eveniet vitae voluptatum ut libero nesciunt numquam expedita natus aliquid porro distinctio?</p>
                 <div class="flex justify-center md:justify-start">
-                    <a href="#" class="px-6 py-2 w-fit text-white bg-brightRed rounded-full hover:bg-brightRedLight">
-                        Get Started
-                    </a>
+                    <Button class="">Get Started</Button>
+
                 </div>
             </div>
             <div class="md:w-1/2">

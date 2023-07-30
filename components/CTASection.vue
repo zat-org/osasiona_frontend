@@ -1,5 +1,5 @@
 <template>
-    <section id="cta" class="bg-brightRed mt-20">
+    <section id="cta" class="bg-brightRed ">
         <div class="container mx-auto p-10 flex flex-col space-y-6 md:flex-row md:justify-around items-center ">
             <h1 class="text-white md:w-3/5 text-center md:text-left text-4xl">
                 Simlify How Your team Works Today.

@@ -1,6 +1,6 @@
 <template>
-    <section id="testimonials">
-        <div class="container text-center mx-auto my-20 flex flex-col space-y-20 items-center justify-center">
+    <section id="testimonials" class="pt-10">
+        <div class="container text-center mx-auto my-10 flex flex-col space-y-20 items-center justify-center">
             <h2 class="text-4xl font-bold"> what's different about manage? </h2>
             <div class="flex flex-col mx-3 space-y-12 md:flex-row md:space-y-0 md:space-x-12">
                 <div class="bg-gray-100 md:w-1/3  p-8 border rounded-md flex flex-col items-center justify-center">
@@ -39,9 +39,7 @@
                         aliquid fuga?</p>
                 </div>
             </div>
-            <a href="#" class="px-6 py-2 w-fit text-white bg-brightRed rounded-full hover:bg-brightRedLight">
-                Get Started
-            </a>
+            <Button class="">Get Started</Button>
         </div>
     </section>
 </template>

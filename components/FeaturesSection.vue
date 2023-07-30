@@ -1,6 +1,6 @@
 <template>
-    <section id="features">
-        <div class="container flex flex-col px-4 my-20 mx-auto space-y-12 md:space-y-0 md:flex-row ">
+    <section id="features" class="pt-10">
+        <div class="container flex flex-col px-4 my-10 mx-auto space-y-12 md:space-y-0 md:flex-row ">
             <div class="flex flex-col space-y-12 md:w-1/2">
                 <h2 class="text-4xl font-bold text-center max-w-md">
                     What's Diffident about manage?
