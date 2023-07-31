@@ -8,6 +8,19 @@
       html {
           font-family: "IBM Plex Sans Arabic", Arial, Helvetica, sans-serif;
       }
+
+      body {
+          background-image: url("../images/bg-tablet-pattern.svg");
+          background-repeat: no-repeat;
+          background-size: 800px;
+          background-position: 90% -7%;
+      }
+
+      #cta {
+          background-image: url("../images/bg-simplify-section-desktop.svg");
+          background-repeat: no-repeat;
+          background-position: 90%;
+      }
   }
 
   * {

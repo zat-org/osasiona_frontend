@@ -6,7 +6,7 @@
                 <div class="bg-gray-100 md:w-1/3  p-8 border rounded-md flex flex-col items-center justify-center">
                     <div
                         class="h-20 w-20 rounded-full border-2 border-stone-300  bg-white -mt-[4.5rem] flex justify-center items-center">
-                        <img class="w-14  object-cover" src="/images/osasiona_dark.png" alt="">
+                        <img class="w-14  object-cover" src="~/assets/images/osasiona_dark.webp" alt="">
                     </div>
                     <h3 class="text-lg font-bold mb-3">Assem Morsy </h3>
                     <p class="text-sm text-gray-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui
@@ -18,7 +18,7 @@
                     class="hidden md:flex bg-gray-100 md:w-1/3  p-8 border rounded-md  flex-col items-center justify-center">
                     <div
                         class="h-20 w-20 rounded-full border-2 border-stone-300  bg-white -mt-[4.5rem] flex justify-center items-center">
-                        <img class="w-14  object-cover" src="/images/osasiona_dark.png" alt="">
+                        <img class="w-14  object-cover" src="~/assets/images/osasiona_dark.webp" alt="">
                     </div>
                     <h3 class="text-lg font-bold mb-3">Assem Morsy </h3>
                     <p class="text-sm text-gray-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui
@@ -30,7 +30,7 @@
                     class=" hidden md:flex bg-gray-100 md:w-1/3  p-8 border rounded-md  flex-col items-center justify-center">
                     <div
                         class="h-20 w-20 rounded-full border-2 border-stone-300  bg-white -mt-[4.5rem] flex justify-center items-center">
-                        <img class="w-14 object-cover" src="/images/osasiona_dark.png" alt="">
+                        <img class="w-14 object-cover" src="~/assets/images/osasiona_dark.webp" alt="">
                     </div>
                     <h3 class="text-lg font-bold mb-3">Assem Morsy </h3>
                     <p class="text-sm text-gray-600"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui

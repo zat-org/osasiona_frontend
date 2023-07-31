@@ -2,7 +2,7 @@
     <section id="footer" class="bg-zinc-800 border-t-2  border-zinc-700">
         <div class="container mx-auto py-10 px-5 flex flex-col md:flex-row space-y-6">
             <div class="md:w-1/3 flex flex-col justify-between items-center space-y-6">
-                <img class="w-24" src="/images/osasiona.png" alt="">
+                <img class="w-24" src="~/assets/images/osasiona.webp" alt="">
                 <div class="flex flex-row space-x-6">
                     <a href="#" class=" text-gray-200  hover:text-[#0165E1]">
                         <i class="fa-brands fa-facebook fa-2x"></i>

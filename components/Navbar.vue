@@ -3,7 +3,7 @@
     <nav class="shadow-lg  bg-white">
         <div class="flex justify-between items-center relative py-2 px-8 bg-white ">
             <div class="flex justify-between md:justify-center w-full md:w-fit">
-                <img class="h-16" src="/images/osasiona_dark.png" alt="osasyona Logo">
+                <img class="h-16" src="~/assets/images/osasiona_dark.webp" alt="osasyona Logo">
                 <button @click="toggleNav" class="block md:hidden hover:text-gray-600 focus:outline-none ">
                     <i :class="navState ? 'fa-align-right' : 'fa-xmark'" class="fa-solid fa-xl"></i>
                 </button>

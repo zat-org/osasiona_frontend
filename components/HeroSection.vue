@@ -1,7 +1,7 @@
 <template>
     <section id="hero">
-        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto my-20 space-y-0 md:space-y-0">
-            <div class="flex flex-col  space-y-12 md:w-1/2">
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10">
+            <div class="flex flex-col space-y-4  md:space-y-12 md:w-1/2">
                 <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
                     Bring Every One Together to Build Awesome Products
                 </h1>
@@ -13,8 +13,8 @@
 
                 </div>
             </div>
-            <div class="md:w-1/2">
-                <img class="md:-mt-32" src="/images/WelcomeSectionImg.png" alt="hero image">
+            <div class="hidden md:block md:w-1/2 ">
+                <img src="~/assets/images/WelcomeSectionImg.svg" alt="hero image">
             </div>
         </div>
     </section>

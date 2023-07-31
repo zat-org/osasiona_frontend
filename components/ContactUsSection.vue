@@ -35,7 +35,7 @@
                 <p class="pt-2 text-lg  text-zinc-600">hr@osasyona.com</p>
             </a>
 
-            <a href="https://wa.me/+966545970009/?text=Hello world" target="_blank"
+            <a href="https://wa.me/+966545970009/" target="_blank"
                 class=" hover:-translate-y-3 transition-all h-32 w-full md:w-52 bg-zinc-100 shadow-xl border-2 border-brightRed rounded-xl flex justify-center flex-col items-center relative">
                 <div
                     class="text-green-500 text-4xl bg-white h-16 w-16 flex justify-center items-center border-2 border-brightRed rounded-full absolute -top-8">

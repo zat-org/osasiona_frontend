@@ -60,7 +60,7 @@
                 </form>
             </div>
             <div class=" hidden md:flex container mx-auto  justify-center">
-                <img class="" src="/images/contact-form.svg" alt="contact-from-svg">
+                <img class="" src="~/assets/images/contact-form.svg" alt="contact-from-svg">
             </div>
         </div>
     </section>
