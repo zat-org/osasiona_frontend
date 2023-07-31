@@ -81,6 +81,7 @@
 <script setup lang="ts">
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide } from 'vue3-carousel'
+const runtimeConfig = useRuntimeConfig()
 const { getDoc, document, loading, error } = getDocument()
 type Statistic = {
     title: string, value: number, icon: string
@@ -102,11 +103,13 @@ const statistics = ref<IStatistics>({
         title: "عدد المشاهدات ", value: 0, icon: "fa-solid fa-glasses"
     }
 })
+
+
 onMounted(async () => {
     await getDoc("channels", "IqJYbOQ4oJAHeJ66AtV7");
     document.value.channelsData.forEach(async (channel: any) => {
         if (channel.state === 'Working' && channel.youtubeId !== '') {
-            $fetch(`https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channel.youtubeId}&key=AIzaSyB7zy8THRNZgKJtf3Yz1La66OoYYl3z0tw`)
+            $fetch(`https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&id=${channel.youtubeId}&key=${runtimeConfig.public.youtubeApi}`)
                 .then((data: any) => {
                     let states = data.items[0].statistics;
                     statistics.value.subscriberCount.value += parseInt(states.subscriberCount);
