@@ -26,8 +26,8 @@
                 </li>
             </ul>
 
-            <a href="#contact-from" class=" block px-6 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight">
-
+            <a href="#contact-from"
+                class="hidden md:block px-6 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight">
                 لنعمل سويا
             </a>
         </div>
