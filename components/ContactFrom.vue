@@ -1,6 +1,6 @@
 <template>
-    <section dir="rtl" id="contact-from" class="bg-white pt-10">
-        <div class="grid  grid-cols-1 md:grid-cols-2 my-10 md:px-5 items-center ">
+    <section dir="rtl" id="contact-from" class="bg-white pt-10 overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 my-10 md:px-5 items-center ">
             <div class="container mx-auto flex flex-col items-center justify-center ">
                 <div id="from-header" class="text-black">
                     <h2 class="text-4xl">

@@ -26,17 +26,14 @@
                 </li>
             </ul>
 
-            <a href="#contact-from"
-                class="hidden md:block px-6 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight">
-                لنعمل سويا
-            </a>
+
         </div>
     </nav>
 </template>
 
 <script setup lang="ts">
 const router = useRouter()
-const navState = ref<Boolean>(false);
+const navState = ref<Boolean>(true);
 const toggleNav = () => {
     navState.value = !navState.value;
 }
