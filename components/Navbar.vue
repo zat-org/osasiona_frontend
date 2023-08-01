@@ -43,9 +43,9 @@ type link = {
 const Links: link[] = [
     { name: "الرئيسة", link: "/", icon: "fa-solid fa-house" },
     { name: "من نحن ؟", link: "/about", icon: "fa-solid fa-circle-info" },
-    { name: "قنواتنا ", link: "#channels", icon: "fa-solid fa-video" },
-    { name: "شركاء النجاح", link: "#clients", icon: "fa-solid fa-people-group" },
-    { name: "تواصل معنا", link: "#contact-from", icon: "fa-solid fa-message" }
+    { name: "قنواتنا ", link: "/#channels", icon: "fa-solid fa-video" },
+    { name: "شركاء النجاح", link: "/#clients", icon: "fa-solid fa-people-group" },
+    { name: "تواصل معنا", link: "/#contact-from", icon: "fa-solid fa-message" }
 ]
 const handleLinkClick = (link: link) => {
     toggleNav();
