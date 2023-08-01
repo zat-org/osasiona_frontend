@@ -1,6 +1,6 @@
 <template>
-    <section id="clients" class="pt-10  bg-zinc-800 overflow-hidden">
-        <h2 class="text-4xl font-bold text-center text-white">شركاء نجاحنا</h2>
+    <section id="clients" class="border-t-8 border-brightRed bg-zinc-700 overflow-hidden py-20">
+        <h2 class="text-4xl font-bold text-center text-white ">شركاء نجاحنا</h2>
         <div v-if="document" class="py-10">
             <carousel :items-to-show="2" dir="rtl" :wrapAround="true" :breakpoints="breakpoints" :transition="700"
                 :autoplay="700" :pauseAutoplayOnHover="true">

@@ -1,4 +1,5 @@
 <template>
+    <h1 class="text-center text-2xl md:text-4xl font-bold mt-20">تواصل معنا، أنت آمر وحنا لك نطامر</h1>
     <div class="flex justify-evenly flex-col-reverse md:flex-row items-center py-10 px-8">
         <ClientOnly>
             <a href="https://www.google.com/maps/place/%D8%B3%D8%A7%D9%85%E2%80%AD/@24.8281431,46.6295646,19.5z/data=!4m14!1m7!3m6!1s0x3e2ee564332b3df5:0x9a9487c3eb408971!2z2LPZiNio2LEg2YXYp9ix2YPYqiDYs9mE2Kkg2KfZhNmD2YHYp9it!8m2!3d24.8280922!4d46.629681!16s%2Fg%2F11h4zq4_qg!3m5!1s0x3e2ee541598cc491:0x55d29e9cf910fd38!8m2!3d24.82821!4d46.6295932!16s%2Fg%2F11q4dfslqy?entry=ttu"
@@ -21,7 +22,7 @@
                     class="text-violet-300 bg-white h-16 w-16 flex justify-center items-center border-2 border-brightRed rounded-full absolute -top-8">
                     <i class="fa-solid fa-phone fa-2xl"></i>
                 </div>
-                <h3 class="font-bold pt-5 text-xl">رقم الهاتف</h3>
+                <h3 class="font-bold pt-5 text-xl">رقم الجوال</h3>
                 <p class="pt-2 text-lg text-zinc-600">0545970009</p>
             </a>
 
@@ -41,7 +42,7 @@
                     class="text-green-500 text-4xl bg-white h-16 w-16 flex justify-center items-center border-2 border-brightRed rounded-full absolute -top-8">
                     <i class="fa-brands fa-whatsapp "></i>
                 </div>
-                <h3 class="font-bold pt-5 text-xl">رسالنا بالواتس</h3>
+                <h3 class="font-bold pt-5 text-xl">واتساب</h3>
                 <p class="pt-2 text-lg  text-zinc-600">+966545970009</p>
             </a>
         </div>

@@ -39,7 +39,7 @@
                         aliquid fuga?</p>
                 </div>
             </div>
-            <Button class="">Get Started</Button>
+            <Button class="">لنعمل سويا</Button>
         </div>
     </section>
 </template>

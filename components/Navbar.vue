@@ -26,7 +26,10 @@
                 </li>
             </ul>
 
-            <Button class="hidden md:block">لنعمل سويا</Button>
+            <a href="#contact-from" class=" block px-6 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight">
+
+                لنعمل سويا
+            </a>
         </div>
     </nav>
 </template>
@@ -41,10 +44,10 @@ type link = {
     name: string, link: string, icon: string
 }
 const Links: link[] = [
-    { name: "الرئيسية", link: "#hero", icon: "fa-solid fa-house" },
-    { name: "الاسعار", link: "#testimonials", icon: "fa-solid fa-house" },
-    { name: "تواصل معنا", link: "#contact-from", icon: "fa-solid fa-house" },
-    { name: "عنا", link: "#features", icon: "fa-solid fa-house" }
+    { name: "الرئيسة", link: "#hero", icon: "fa-solid fa-house" },
+    { name: "قنواتنا ", link: "#channels", icon: "fa-solid fa-video" },
+    { name: "شركاء النجاح", link: "#clients", icon: "fa-solid fa-people-group" },
+    { name: "تواصل معنا", link: "#contact-from", icon: "fa-solid fa-message" }
 ]
 const handleLinkClick = (link: link) => {
     toggleNav();

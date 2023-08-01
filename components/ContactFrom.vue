@@ -4,11 +4,8 @@
             <div class="container mx-auto flex flex-col items-center justify-center ">
                 <div id="from-header" class="text-black">
                     <h2 class="text-4xl">
-                        تواصل معنا لنعمل سويا<span class="text-brightRed">.</span>
+                        قل اللي بخاطرك <span class="text-brightRed">..</span>
                     </h2>
-                    <p class="text-gray-600 pl-1">او راسلنا من خلال: <a class="text-blue-500 underline"
-                            href="mailto:hr@osasyona.com">
-                            hr@osasyona.com</a></p>
                 </div>
                 <form class="pt-5 rtl:pr-5 ltr:pl-5" @submit.prevent="handleSubmit" novalidate>
                     <template v-for="elm in FormElements" :key="elm.name">

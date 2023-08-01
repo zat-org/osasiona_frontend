@@ -1,5 +1,5 @@
 <template>
-    <div class="py-5  text-white text-center bg-zinc-800  overflow-hidden">
+    <div id="channels" class="py-5  text-white text-center bg-zinc-800  overflow-hidden">
 
 
         <div id='stars'></div>
@@ -8,7 +8,7 @@
 
 
         <div class="container mx-auto">
-            <h2 class="text-4xl font-bold my-8 text-center">احصائياتنا</h2>
+            <h2 class="text-4xl font-bold my-8 text-center">أوساسيونا في أرقام</h2>
 
             <div class=" flex flex-col space-y-4 md:space-y-0 md:flex-row-reverse w-full justify-center items-center ">
                 <div class="hidden md:flex justify-end items-center">
@@ -41,7 +41,7 @@
             </div>
             <hr class="w-1/2 mx-auto my-10 h-0 border-t-2 border-brightRed">
 
-            <h2 class="text-4xl font-bold">منصات تواجدنا</h2>
+            <h2 class="text-4xl font-bold">قنواتنا</h2>
             <div class="my-5">
                 <template v-if="document">
                     <carousel :items-to-show="1" dir="rtl" :wrapAround="true" :transition="1000" :autoplay="1500"

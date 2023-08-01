@@ -1,8 +1,8 @@
 <template>
     <HeroSection />
-    <FeaturesSection />
+    <!-- <FeaturesSection /> -->
     <OurChannels />
-    <Testimonials />
+    <!-- <Testimonials /> -->
     <ClientsSection />
     <CTASection />
     <ContactFrom />

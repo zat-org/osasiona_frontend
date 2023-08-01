@@ -2,8 +2,8 @@ import { doc, Firestore, getDoc as getDocFromFirebase } from "firebase/firestore
 const getDocument = () => {
     const { $firestore } = useNuxtApp();
     const db = $firestore as Firestore;
-    const error = ref<string | null>(null);
-    const loading = ref<boolean>(false);
+    const error = useState<string | null>("error", () => null);
+    const loading = useState<boolean>("loading", () => false);
 
     const document = ref<any>(null);
     const getDoc = async (collectionName: string, docId: string) => {

@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const Title = "اوساسيونا"
-const Description = ""
-const Keywords = ""
+const Description = "أوساسيونا مكان صنَّاع المحتوى، والمكان الذي يُمكِّنك من الانطلاقة للعالم الذي تريده."
+const Keywords = ` صناعة المحتوى  , بلوت , كتابة المحتوى , سام ,أوساسيونا , صانع محتوى`
 const LogoURL = "https://firebasestorage.googleapis.com/v0/b/players-photos.appspot.com/o/channelsLogos%2Fosasiona_dark.webp?alt=media&token=8b8e3c68-b331-44de-911d-220cc647c09d"
 const WebsiteUrl = "https://osasyona.com/"
 
