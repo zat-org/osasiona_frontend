@@ -39,7 +39,7 @@
                                     class="transition-all absolute top-1/2 -translate-y-1/2 fa-xl ltr:-left-8 rtl:-right-8"></i>
                             </template>
                         </div>
-                        <div v-show="formState[elm.name].errors.length > 0" class="text-sm text-brightRed  mb-2 ">
+                        <div v-show="formState[elm.name].errors.length > 0" class="text-sm text-brightRed mb-2 ">
                             <p v-for="err in formState[elm.name].errors" class="">
                                 <i class="fa-solid fa-circle-exclamation"></i> {{ err }}
                             </p>

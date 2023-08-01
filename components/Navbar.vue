@@ -41,7 +41,8 @@ type link = {
     name: string, link: string, icon: string
 }
 const Links: link[] = [
-    { name: "الرئيسة", link: "#hero", icon: "fa-solid fa-house" },
+    { name: "الرئيسة", link: "/", icon: "fa-solid fa-house" },
+    { name: "من نحن ؟", link: "/about", icon: "fa-solid fa-circle-info" },
     { name: "قنواتنا ", link: "#channels", icon: "fa-solid fa-video" },
     { name: "شركاء النجاح", link: "#clients", icon: "fa-solid fa-people-group" },
     { name: "تواصل معنا", link: "#contact-from", icon: "fa-solid fa-message" }

@@ -9,9 +9,9 @@
                     نعرف طبيعة المعاناة، ونعرف حجم المشاغل التي يحتاجها صانع المحتوى لينجح، نحن نبدأ بك من حيث انتهى
                     الآخرون، لنصنع لك المحتوى الذي يليق بك. </p>
                 <div class="flex justify-center md:justify-start">
-                    <a href="#contact-from"
+                    <NuxtLink to="/about"
                         class=" block px-6 py-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight">اعرف عنا
-                        أكثر</a>
+                        أكثر</NuxtLink>
                 </div>
             </div>
             <div class="hidden md:block md:w-1/2 ass ">
