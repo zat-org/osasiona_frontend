@@ -5,7 +5,7 @@
     <!-- <Testimonials /> -->
     <ClientsSection />
     <CTASection />
-    <ContactFrom />
+    <ContactForm />
     <!-- <ContactUsSection /> -->
 </template>
 
