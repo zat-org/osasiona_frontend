@@ -45,7 +45,7 @@ const Links: link[] = [
     { name: "من نحن ؟", link: "/about", icon: "fa-solid fa-circle-info" },
     { name: "قنواتنا ", link: "/#channels", icon: "fa-solid fa-video" },
     { name: "شركاء النجاح", link: "/#clients", icon: "fa-solid fa-people-group" },
-    { name: "تواصل معنا", link: "/#contact-from", icon: "fa-solid fa-message" }
+    { name: "تواصل معنا", link: "/#contact-form", icon: "fa-solid fa-message" }
 ]
 const handleLinkClick = (link: link) => {
     toggleNav();
