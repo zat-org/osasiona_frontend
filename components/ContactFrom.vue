@@ -1,5 +1,5 @@
 <template>
-    <section dir="rtl" class="text-gray-600 body-font relative">
+    <section id="contact-form" dir="rtl" class="text-gray-600 body-font relative">
         <div class="px-5 py-16 mx-5 md:mx-10 lg:mx-20 flex sm:flex-nowrap flex-wrap flex-col md:flex-row">
             <div
                 class=" md:w-1/2 bg-white flex flex-col md:mr-auto w-full items-center justify-center md:py-8 mb-8 md:mt-0">
